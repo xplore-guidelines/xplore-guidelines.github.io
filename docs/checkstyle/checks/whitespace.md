@@ -8,7 +8,7 @@ Operations like code merges will be much easier if everyone uses the same style.
 
 If the code is indented with spaces, it is a good idea to use this check to reject lines containing a tab character.
 
-``` xml linenums="1"
+``` xml linenums="1" title="checkstyle.xml"
 <module name="Checker">
     <module name="FileTabCharacter">
         <property name="eachLine" value="true"/>
@@ -18,7 +18,7 @@ If the code is indented with spaces, it is a good idea to use this check to reje
 
 If necessary, you can limit the scope of this Check to files with specific extensions (e.g. java).
 
-``` xml linenums="1"
+``` xml linenums="1" title="checkstyle.xml"
 <module name="Checker">
     <module name="FileTabCharacter">
         <property name="eachLine" value="true"/>

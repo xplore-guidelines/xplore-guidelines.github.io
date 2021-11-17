@@ -9,7 +9,7 @@ The executable statement count check limits the amount of executable statements 
     They should do it well.
     They should do it only.
 
-``` xml linenums="1"
+``` xml linenums="1" title="checkstyle.xml"
 <module name="Checker">
     <module name="TreeWalker">
         <module name="ExecutableStatementCount">
@@ -31,7 +31,7 @@ We've had customers were an external code audit that heavily relied on static co
 Although those methods were very readable and only contained a limited amount of executable statements, they still impacted our overall score.
 Setting an upper limit of 30 lines per method can avoid such scenario's.
 
-``` xml linenums="1"
+``` xml linenums="1" title="checkstyle.xml"
 <module name="Checker">
     <module name="TreeWalker">
         <module name="MethodLength">
@@ -43,7 +43,7 @@ Setting an upper limit of 30 lines per method can avoid such scenario's.
 
 ## Line length
 
-``` xml linenums="1"
+``` xml linenums="1" title="checkstyle.xml"
 <module name="Checker">
     <module name="LineLength">
         <property name="max" value="120"/>
@@ -53,7 +53,7 @@ Setting an upper limit of 30 lines per method can avoid such scenario's.
 
 If necessary, you can limit the scope of this Check to files with specific extensions (e.g. java).
 
-``` xml linenums="1"
+``` xml linenums="1" title="checkstyle.xml"
 <module name="Checker">
     <module name="LineLength">
         <property name="fileExtensions" value="java"/>
@@ -71,7 +71,7 @@ If necessary, you can limit the scope of this Check to files with specific exten
 
 By default the parameter number check allows up to 7 parameters per method.
 
-``` xml linenums="1"
+``` xml linenums="1" title="checkstyle.xml"
 <module name="Checker">
     <module name="TreeWalker">
         <module name="ParameterNumber">

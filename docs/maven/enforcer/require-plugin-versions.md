@@ -4,7 +4,7 @@ Relying on the default plugin versions from a particular Maven version is a bad 
 Always define the version of every plugin used by the build to guarantee build reproducibility.
 Configure the `maven-enforcer-plugin` to fail the build if a plugin is used without specifying the version to use.
 
-``` xml linenums="1"
+``` xml linenums="1" title="pom.xml"
 <plugin>
     <artifactId>maven-enforcer-plugin</artifactId>
     <configuration>

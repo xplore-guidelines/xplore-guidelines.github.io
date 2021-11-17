@@ -3,7 +3,7 @@
 The best place to configure the version of the dependencies you use is in the dependency management part of your POM file.
 In a multi-module project, this is typically configured in a parent POM from which all other POM's inherit.
 
-``` xml linenums="1"
+``` xml linenums="1" title="pom.xml"
 <dependencyManagement>
     <dependencies>
         <dependency>

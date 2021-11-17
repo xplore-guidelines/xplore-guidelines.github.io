@@ -1,6 +1,6 @@
 # Example configuration
 
-``` xml linenums="1"
+``` xml linenums="1" title="checkstyle.xml"
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE module PUBLIC
