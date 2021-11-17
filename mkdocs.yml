@@ -1,0 +1,89 @@
+edit_uri: edit/main/docs/
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/xplore-guidelines
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/xploregroup
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/XploreGroup
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/XploreGroup.be
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/xploregroup
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+nav:
+  - index.md
+  - Checkstyle:
+    - checkstyle/index.md
+    - Checks:
+      - checkstyle/checks/size.md
+      - checkstyle/checks/miscellaneous.md
+      - checkstyle/checks/whitespace.md
+    - checkstyle/example-configuration.md
+  - Gradle: gradle/index.md
+  - Maven:
+    - maven/compiler-warnings.md
+    - maven/checkstyle.md
+    - maven/pmd.md
+    - maven/encoding.md
+    - Enforcer:
+      - maven/enforcer/ban-duplicate-dependencies.md
+      - maven/enforcer/require-plugin-versions.md
+    - maven/dependency-management.md
+    - maven/plugin-management.md
+    - maven/bill-of-materials.md
+    - maven/source-plugin.md
+  - Dependencies:
+    - dependencies/index.md
+
+plugins:
+  - search
+
+repo_name: xplore-guidelines.github.io
+repo_url: https://github.com/xplore-guidelines/xplore-guidelines.github.io
+
+site_name: Xplore Guidelines
+
+theme:
+  favicon: assets/favicon.svg
+  features:
+    - content.code.annotate
+    - navigation.indexes
+    - navigation.instant
+    - navigation.top
+    - search.share
+    - search.suggest
+  language: en
+  logo: assets/logo.svg
+  name: material
+  palette:
+    - accent: light blue
+      media: "(prefers-color-scheme: light)"
+      primary: blue
+      scheme: default
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to dark mode
+    - accent: light blue
+      media: "(prefers-color-scheme: dark)"
+      primary: blue
+      scheme: slate
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to light mode
