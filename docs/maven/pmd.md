@@ -50,7 +50,7 @@ For example folders that contain generated code.
 When working on more than one codebase where you want to keep the PMD configuration consistent, you can consider packaging and releasing the `pmd.xml` configuration file as a separate artifact.
 Add a dependency to the new artifact and point to the shared configuration file.
 
-``` xml linenums="1"
+``` xml linenums="1" title="pom.xml"
 <plugin>
     <artifactId>maven-pmd-plugin</artifactId>
     <configuration>

@@ -12,7 +12,7 @@ Using `-Xlint:all`, you enable all compiler warnings that come with the Java com
 Specific compiler warnings can be excluded using `-`.
 For example excluding warnings related to annotation processing can be excluded by using `-Xlint:all,-processing`.
 
-``` xml linenums="1"
+``` xml linenums="1" title="pom.xml"
 <plugin>
     <artifactId>maven-compiler-plugin</artifactId>
     <configuration>

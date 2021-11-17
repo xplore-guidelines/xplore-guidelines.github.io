@@ -6,7 +6,7 @@ The file provides a central place to define and update those versions.
 
 Whenever a framework or library you depend on provides a BOM file, it is the preferred way to introduce that dependency into your project.
 
-``` xml linenums="1"
+``` xml linenums="1" title="pom.xml"
 <dependencyMangement>
     <dependencies>
         <dependency>
